@@ -1,4 +1,4 @@
-package com.example.mygiphyapp.data.dto.search_gif_dto
+package com.example.mygiphyapp.data.dto
 
 data class SearchGifDto(
     val `data`: List<Data>,

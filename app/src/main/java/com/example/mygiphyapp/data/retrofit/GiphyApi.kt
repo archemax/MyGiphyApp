@@ -1,10 +1,8 @@
 package com.example.mygiphyapp.data.retrofit
 
 import com.example.mygiphyapp.Constants
-import com.example.mygiphyapp.data.dto.search_gif_dto.Data
-import com.example.mygiphyapp.data.dto.search_gif_dto.SearchGifDto
+import com.example.mygiphyapp.data.dto.SearchGifDto
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface GiphyApi {
@@ -16,10 +14,6 @@ interface GiphyApi {
     ): SearchGifDto
 
 
-    @GET("{gifId}")
-    suspend fun getGifById (
-        @Query("apiKey") apiKey: String = Constants.API_KEY,
-        @Path("gifId") gifId: String
-    ): Data
+
 }
 

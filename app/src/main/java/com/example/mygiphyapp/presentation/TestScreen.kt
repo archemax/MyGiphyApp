@@ -31,7 +31,7 @@ fun TestScreen() {
     Log.d("imageloadertest", "$imageLoader")
 
     AsyncImage(
-        model = "https://giphy.com/gifs/cat-funny-animation-aC45M5Q4D07Pq",
+        model = "https://media0.giphy.com/media/3o7527pa7qs9kCG78A/giphy.gif?cid=5da11ca9tqevf4ucjmgxl91c2xpehfdjtht7qr0vl6xs7woo&ep=v1_gifs_search&rid=giphy.gif&ct=g",
         imageLoader = imageLoader,
         contentDescription = "",
         modifier = Modifier.fillMaxSize()

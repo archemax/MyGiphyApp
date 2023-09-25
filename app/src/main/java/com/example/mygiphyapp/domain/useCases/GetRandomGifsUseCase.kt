@@ -20,8 +20,8 @@ class GetRandomGifsUseCase @Inject constructor(
         try {
             emit(Resource.Loading())
 
-            val searchGifDto = repository.getRandomGifs()
-            val listOfGifs = searchGifDto.toGifDataList()
+            val data = repository.getRandomGifs()
+            val listOfGifs = data.toGifDataList()
             Log.d("AAA", "$listOfGifs")
 
             emit(Resource.Success(listOfGifs))

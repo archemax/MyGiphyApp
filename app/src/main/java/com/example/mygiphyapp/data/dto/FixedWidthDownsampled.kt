@@ -1,9 +1,7 @@
-package com.example.mygiphyapp.data.dto.search_gif_dto
+package com.example.mygiphyapp.data.dto
 
-data class FixedWidth(
+data class FixedWidthDownsampled(
     val height: String,
-    val mp4: String,
-    val mp4_size: String,
     val size: String,
     val url: String,
     val webp: String,

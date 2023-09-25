@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.annotation.RequiresExtension
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import com.example.mygiphyapp.presentation.navigation.Navigation
 import com.example.mygiphyapp.ui.theme.MyGiphyAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -17,8 +18,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyGiphyAppTheme {
-                //MainScreen()
-                TestScreen()
+                Navigation()
+                //TestScreen()
 
 
             }

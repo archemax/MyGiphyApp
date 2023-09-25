@@ -1,22 +1,19 @@
 package com.example.mygiphyapp.domain.model
 
+import com.example.mygiphyapp.data.dto.Data
+import com.example.mygiphyapp.data.dto.SearchGifDto
 
-import com.example.mygiphyapp.data.dto.search_gif_dto.Data
-import com.example.mygiphyapp.data.dto.search_gif_dto.SearchGifDto
 
 class GifDataClass(
     val myId: String,
     val myUrl: String,
-    //val myWebp: String
 )
 
 // 1 map data to gifDataClass
 fun Data.toGifDataClass(): GifDataClass {
     return GifDataClass(
         myId = this.id,
-        myUrl = this.url,
-        //myWebp = this.
-
+        myUrl = this.images.original.url,
     )
 }
 
